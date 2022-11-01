@@ -10,10 +10,28 @@ JSON-based REST API for real-time, intraday and historical stock market data, su
 End Points
 •	Tickers
  
-Usage
-Class	Widget
-MarketStockyView	MarketStockWidget
-ResultsView	ResultsWidget
+
+<body lang=EN-ZA style='tab-interval:36.0pt;word-wrap:break-word'>
+<!--StartFragment-->
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:2'><b><span style='font-size:18.0pt;
+font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:EN-ZA'>Usage<o:p></o:p></span></b></p>
+
+
+
+Class | Widget
+-- | --
+MarketStockyView | MarketStockWidget
+ResultsView | ResultsWidget
+
+
+
+<!--EndFragment-->
+</body>
+
+</html>
 
 Legal
 All usage of the marketstack website, API, and services is subject to the [marketstack Terms & Conditions](https://marketstack.com/terms) and all annexed legal documents and agreements.
