@@ -5,7 +5,7 @@ Market Stack
 ![3](https://user-images.githubusercontent.com/48241758/199217906-360f50b5-18d2-426d-8442-04ba7784568e.JPG)
 ![4](https://user-images.githubusercontent.com/48241758/199217909-bcd98eeb-0ec0-4616-a913-c7ed084360df.JPG)
 
-JSON-based REST API for real-time, intraday and historical stock market data, supporting 125,000+ stock ticker symbols from 72+ worldwide stock exchanges. In this instance I used https://api.marketstack.com/v1/ticker to get the response and also on a specific date range.
+JSON-based REST API for real-time, intraday and historical stock market data, supporting 125,000+ stock ticker symbols from 72+ worldwide stock exchanges. In this instance I used https://api.marketstack.com/v1/ticker to get the response and also on a specific date range. On the list of different market we get only 10 randomly.
 
 End Points
 •	Tickers
