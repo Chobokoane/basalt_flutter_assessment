@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:flutter_assessment/model/market_stock_model.dart';
+import 'package:flutter_assessment/core/model/market_stock_model.dart';
 import 'package:http/http.dart' as http;
 import '../../../main.dart';
 

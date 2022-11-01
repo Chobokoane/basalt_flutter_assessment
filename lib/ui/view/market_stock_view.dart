@@ -13,6 +13,7 @@ class MarketStockyView extends StatelessWidget {
     }, builder:
         (BuildContext context, MarketStockViewModel model, Widget? child) {
       return Scaffold(
+          backgroundColor: const Color(0xFF2D365C),
           appBar: AppBar(
             backgroundColor: const Color(0xFF2D365C),
             title: const Text(
@@ -27,7 +28,7 @@ class MarketStockyView extends StatelessWidget {
           body: MarketStockWidget(
             data: model.marketData,
             state: model.state,
-            localData: model.marketData!.data,
+            localData: model.listMarketData,
             errorMessage: model.errorMessage,
           ));
       /**/

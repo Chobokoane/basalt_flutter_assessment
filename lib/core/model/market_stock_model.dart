@@ -45,20 +45,33 @@ class Pagination {
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['limit'] = this.limit;
-    data['offset'] = this.offset;
-    data['count'] = this.count;
-    data['total'] = this.total;
+    if (limit != null) {
+      data['limit'] = this.limit;
+    }
+    if (offset != null) {
+      data['offset'] = this.offset;
+    }
+    if (limit != null) {
+      data['limit'] = this.limit;
+    }
+    if (count != null) {
+      data['count'] = this.count;
+    }
+    
+    if (total != null) {
+      data['total'] = this.total;
+    }
+    
     return data;
   }
 }
 
 class Data {
-  late String name;
+  String? name;
   String? symbol;
   StockExchange? stockExchange;
 
-  Data({ this.symbol, this.stockExchange});
+  Data({this.name,this.symbol, this.stockExchange});
 
   Data.fromJson(Map<String, dynamic> json) {
     name = json['name'];
@@ -70,8 +83,12 @@ class Data {
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['name'] = this.name;
-    data['symbol'] = this.symbol;
+    if (name != null) {
+      data['name'] = this.name;
+    }
+    if (symbol != null) {
+      data['symbol'] = this.symbol;
+    }
     if (this.stockExchange != null) {
       data['stock_exchange'] = this.stockExchange!.toJson();
     }
@@ -114,13 +131,25 @@ class StockExchange {
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['name'] = this.name;
-    data['acronym'] = this.acronym;
-    data['mic'] = this.mic;
-    data['country'] = this.country;
+    if (name != null) {
+      data['name'] = this.name;
+    }
+    if (acronym != null) {
+      data['acronym'] = this.acronym;
+    }
+    if (mic != null) {
+      data['mic'] = this.mic;
+    }
+    if (country != null) {
+      data['country'] = this.country;
+    }
+    if (city != null) {
+      data['city'] = this.city;
+    }
+    if (website != null) {
+      data['website'] = this.website;
+    }
     data['country_code'] = this.countryCode;
-    data['city'] = this.city;
-    data['website'] = this.website;
     if (this.timezone != null) {
       data['timezone'] = this.timezone!.toJson();
     }
@@ -143,8 +172,12 @@ class Timezone {
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['timezone'] = this.timezone;
-    data['abbr'] = this.abbr;
+   if(timezone != null){
+     data['timezone'] = this.timezone;
+   }
+   if(abbr != null){
+     data['abbr'] = this.abbr;
+   }
     data['abbr_dst'] = this.abbrDst;
     return data;
   }

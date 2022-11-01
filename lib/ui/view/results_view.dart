@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_assessment/core/viewmodel/market_stock_view_model.dart';
-import 'package:flutter_assessment/model/market_stock_model.dart';
+import 'package:flutter_assessment/core/model/market_stock_model.dart';
 import 'package:flutter_assessment/ui/view/base_view.dart';
 import 'package:flutter_assessment/ui/widget/results_widget.dart';
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_assessment/model/market_stock_model.dart';
+import 'package:flutter_assessment/core/model/market_stock_model.dart';
 
 class ResultsWidget extends StatelessWidget {
   final Data? localData;
@@ -33,7 +33,7 @@ class ResultsWidget extends StatelessWidget {
                         height: 10,
                       ),
                       Text(
-                        localData!.name,
+                        localData!.name!,
                         style: const TextStyle(
                           fontWeight: FontWeight.w400,
                           fontSize: 16,
